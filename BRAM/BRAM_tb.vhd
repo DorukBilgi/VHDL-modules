@@ -1,3 +1,6 @@
+-- Program tarafından oluşturulmuş olan BRAM_wrapper dosyası için testbench dosyası.
+-- Bu dosya ile block ram karakteristiği gözlemlenmek istendi.
+
 library IEEE;
 use IEEE.Std_logic_1164.all;
 use IEEE.Numeric_Std.all;
