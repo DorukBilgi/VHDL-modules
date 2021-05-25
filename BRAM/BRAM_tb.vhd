@@ -22,9 +22,9 @@ architecture rtl of BRAM_wrapper_tb is
   -- clock
   signal clk : std_logic := '1';
 
-  signal addr_temp  : std_logic_vector(3 downto 0)  := (others => '0');
-  signal din_temp   : std_logic_vector(15 downto 0) := (others => '0');
-  signal sayac_temp : std_logic_vector(7 downto 0)  := (others => '0');
+  signal addr_temp  : std_logic_vector(3 downto 0)   := (others => '0');
+  signal din_temp   : std_logic_vector(15 downto 0)  := (others => '0');
+  signal sayac_temp : std_logic_vector(7 downto 0)   := (others => '0');
   
   
   
@@ -93,10 +93,9 @@ your_instance_name : blk_mem_gen_2
            
        if(sayac_temp = "00001111")then
            
-        BRAM_PORTA_0_we     <= "0"; -- write off mode 
+        BRAM_PORTA_0_we     <= "1"; -- write off mode 
         din_temp            <= "0000000000000000"; -- gelen data default
         addr_temp           <= "0000"; --reset the address value for reading from memory location "4"
-        -- neden bilmiyorum 120 ns sonra verdiğim dataları çıkışta gözlemleyebiliyorum. başlangıçta 120 ns boyunca dataout 0
         sayac_temp          <= std_logic_vector(unsigned(sayac_temp) + 1);
            
        end if;
