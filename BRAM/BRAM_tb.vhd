@@ -22,19 +22,19 @@ architecture rtl of BRAM_wrapper_tb is
   -- clock
   signal clk : std_logic := '1';
 
-  signal addr_temp : std_logic_vector(3 downto 0) := (others => '0');
-  signal din_temp : std_logic_vector(15 downto 0) := (others => '0');
-  signal sayac_temp : std_logic_vector(7 downto 0) := (others => '0');
+  signal addr_temp  : std_logic_vector(3 downto 0)  := (others => '0');
+  signal din_temp   : std_logic_vector(15 downto 0) := (others => '0');
+  signal sayac_temp : std_logic_vector(7 downto 0)  := (others => '0');
   
   
   
   COMPONENT blk_mem_gen_2
   PORT (
-    clka : IN STD_LOGIC;
-    ena : IN STD_LOGIC;
-    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    clka  : IN STD_LOGIC;
+    ena   : IN STD_LOGIC;
+    wea   : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    dina : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    dina  : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END COMPONENT;
@@ -54,11 +54,11 @@ begin  -- architecture rtl
 
 your_instance_name : blk_mem_gen_2
   PORT MAP (
-    clka => clk,
-    ena => BRAM_PORTA_0_en,
-    wea => BRAM_PORTA_0_we,
+    clka  => clk,
+    ena   => BRAM_PORTA_0_en,
+    wea   => BRAM_PORTA_0_we,
     addra => BRAM_PORTA_0_addr,
-    dina => BRAM_PORTA_0_din,
+    dina  => BRAM_PORTA_0_din,
     douta => BRAM_PORTA_0_dout
   );
   
