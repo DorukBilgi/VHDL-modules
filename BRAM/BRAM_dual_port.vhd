@@ -72,13 +72,13 @@ your_instance_name : blk_mem_gen_dual
     wea   => ramWEn_A,
     addra => ramAddr_A,     ----******
     dina  => ramDataIn_A,
-    douta => ramDataOut_A, -- okuma datalar˝
+    douta => ramDataOut_A, -- okuma datalar√Ω
     clkb  => iClkB,
     enb   => ramEn_B,
     web   => ramWEn_B,
     addrb => ramAddr_B,      ---*****
     dinb  => ramDataIn_B,
-    doutb => ramDataOut_B -- yazma datalar˝
+    doutb => ramDataOut_B -- yazma datalar√Ω
   );
   
 
@@ -143,11 +143,3 @@ begin
 end process ramProRead;
      
 end Behavioral;
-
-
-
-
-
-
-
-
