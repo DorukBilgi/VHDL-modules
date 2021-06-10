@@ -117,7 +117,7 @@ process (iClk) is
             tvalid                <=  '1';
             iCountEn              <=  '1';
             fazdeger              <=  to_unsigned(2**15,16) & to_unsigned(13107,16);
-            -- M = (2^32/250)*(iFreq); bu deðerler iFreq = 167 için ...
+            -- M = (2^32/250)*(iFreq); bu deÃ°erler iFreq = 167 iÃ§in ...
             phaseVal              <=  std_logic_vector(to_unsigned(2**15,16) & to_unsigned(13107,16));
             oDataOut              <=  oDataOut_mem;
             
