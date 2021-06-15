@@ -230,3 +230,5 @@ process (iClk) is
 end process; -- duzenlendi
   
 end Behavioral;
+
+      
