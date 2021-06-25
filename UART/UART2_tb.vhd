@@ -30,10 +30,10 @@ signal    oRx_Data1   :  std_logic_vector (7 downto 0) := (others => '0'); -- rx
 --signal    iRx1        : std_logic := '0'; -- rx
 --signal    oTx1        : std_logic := '0'; -- tx
     
-signal    oTxDone1    : std_logic := '0'; -- tx tamamlandı
+signal    oTxDone1    : std_logic := '0'; -- tx tamamlandÃ½
 signal    oTxBusy1    : std_logic := '0'; -- tx busy
     
-signal    oRxDone1    : std_logic := '0'; -- rx tamamlandı
+signal    oRxDone1    : std_logic := '0'; -- rx tamamlandÃ½
 signal    oRxBusy1    : std_logic := '0'; -- rx busy
     
     -- UART 2 --
@@ -46,10 +46,10 @@ signal    oRx_Data2   :  std_logic_vector (7 downto 0) := (others => '0'); -- rx
 --signal    iRx2        : std_logic := '0'; -- rx
 --signal    oTx2        : std_logic := '0'; -- tx
     
-signal    oTxDone2    : std_logic := '0'; -- tx tamamlandı
+signal    oTxDone2    : std_logic := '0'; -- tx tamamlandÃ½
 signal    oTxBusy2    : std_logic := '0'; -- tx busy
     
-signal    oRxDone2    : std_logic := '0'; -- rx tamamlandı
+signal    oRxDone2    : std_logic := '0'; -- rx tamamlandÃ½
 signal    oRxBusy2    : std_logic := '0'; -- rx busy
 
 constant cClockPeriod : time := 4 ns; -- 250 MHz ---> 4 ns
