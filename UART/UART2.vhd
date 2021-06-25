@@ -27,10 +27,10 @@ port (
     --iRx1        : in std_logic; -- rx
     --oTx1        : out std_logic; -- tx
     
-    oTxDone1    : out std_logic; -- tx tamamlandý
+    oTxDone1    : out std_logic; -- tx tamamlandÃ½
     oTxBusy1    : out std_logic; -- tx busy
     
-    oRxDone1    : out std_logic; -- rx tamamlandý
+    oRxDone1    : out std_logic; -- rx tamamlandÃ½
     oRxBusy1    : out std_logic; -- rx busy
     
     -- UART 2 --
@@ -43,10 +43,10 @@ port (
     --iRx2       : in std_logic; -- rx
     --oTx2       : out std_logic; -- tx
     
-    oTxDone2   : out std_logic; -- tx tamamlandý
+    oTxDone2   : out std_logic; -- tx tamamlandÃ½
     oTxBusy2   : out std_logic; -- tx busy
     
-    oRxDone2   : out std_logic; -- rx tamamlandý
+    oRxDone2   : out std_logic; -- rx tamamlandÃ½
     oRxBusy2   : out std_logic -- rx busy
     
     
@@ -80,10 +80,10 @@ component UART
     iRx       : in std_logic; -- rx
     oTx       : out std_logic; -- tx
     
-    oTxDone   : out std_logic; -- tx tamamlandý
+    oTxDone   : out std_logic; -- tx tamamlandÃ½
     oTxBusy   : out std_logic; -- tx busy
     
-    oRxDone   : out std_logic; -- rx tamamlandý
+    oRxDone   : out std_logic; -- rx tamamlandÃ½
     oRxBusy   : out std_logic -- rx busy
     
      );       
