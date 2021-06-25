@@ -25,10 +25,10 @@ port (
     iRx       : in std_logic; -- rx
     oTx       : out std_logic; -- tx
     
-    oTxDone   : out std_logic; -- tx tamamlandý
+    oTxDone   : out std_logic; -- tx tamamlandÃ½
     oTxBusy   : out std_logic; -- tx busy
     
-    oRxDone   : out std_logic; -- rx tamamlandý
+    oRxDone   : out std_logic; -- rx tamamlandÃ½
     oRxBusy   : out std_logic -- rx busy
     
  );
